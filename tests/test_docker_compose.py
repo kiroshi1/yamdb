@@ -11,7 +11,7 @@ class TestDockerfileCompose:
             f'Проверьте, что в пути {root_dir} указана папка `infra`'
         )
         assert os.path.isdir(infra_dir_path), (
-            f'Проверьте, что {infra_dir_path} - это папка, а не файл'
+            f'Проверьте, что {infra_dir_path} - это папка, а не фай'
         )
 
     def test_docker_compose_file(self):
