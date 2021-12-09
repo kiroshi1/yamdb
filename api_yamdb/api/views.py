@@ -9,19 +9,19 @@ from rest_framework.permissions import (IsAuthenticated,
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
+from reviews.models import Category, Genre, Review, Title
 from users.models import User
 
 from api_yamdb.settings import DEFAULT_FROM_EMAIL
 
-from reviews.models import Category, Genre, Review, Title
 from .filters import TitleFilter
 from .mixins import MixinsViewSet
-from .permissions import (HasAdminRole, IsAdmin,
-                          ReviewCommentPermission)
-from .serializers import (CategorySerializer, CommentSerializer,
-                          GenreSerializer, NewUserSerializer, ReviewSerializer,
+from .permissions import HasAdminRole, IsAdmin, ReviewCommentPermission
+from .serializers import (AuthSerializer, CategorySerializer,
+                          CommentSerializer, GenreSerializer,
+                          NewUserSerializer, ReviewSerializer,
                           TitleReadSerializer, TitleWriteSerializer,
-                          UserSerializer, AuthSerializer)
+                          UserSerializer)
 
 
 class UserViewSet(viewsets.ModelViewSet):
