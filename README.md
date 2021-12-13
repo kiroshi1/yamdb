@@ -5,8 +5,9 @@
 Python 3.7
 Django 2.2.16
 Docker
+GitHub Actions
 
-### Запуск проекта в dev-режиме
+### Запуск проекта в dev-режиме локально
 - Установите и активируйте виртуальное окружение
 - Запустите docker-compose командой
 ```
@@ -27,6 +28,15 @@ docker-compose exec web python manage.py createsuperuser
 ```
 docker-compose exec web python manage.py collectstatic
 ```
+Если же после внесенных изменений нужно развернуть проект на боевом сервере,
+выполните последовательно несколько команд из корневой папки проекта:
+```
+git add .
+git commit -m <commit_name>
+git push
+```
+Проект будет протестирован и запущен на боевом сервере.
+
 ### Наслаждайтесь
 ### Авторы
 Denis Razgonyaev
