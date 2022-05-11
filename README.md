@@ -39,6 +39,9 @@ git push
 
 ### Наслаждайтесь
 ### Авторы
-Denis Razgonyaev
+Denis Razgonyaev @kiroshi1
+Konstantin Burkov @starbystar
+Denis Demenev @denisdemenev
+
 
 ![WORKFLOW](https://github.com/lightning1701/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
